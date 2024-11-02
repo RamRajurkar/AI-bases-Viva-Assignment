@@ -1,0 +1,41 @@
+Category,Question,Options
+Understanding questions,"Explain the difference between a mutable and an immutable String in Java, and provide examples to illustrate the difference.",
+Understanding questions,How do 'autoboxing' and 'unboxing' simplify the use of wrapper classes in Java?,
+Understanding questions,Describe the purpose of constructors in Java and explain how they differ from methods.,
+Understanding questions,"What are the different types of inheritance in Java, and provide examples of each type?",
+Understanding questions,Explain the concept of 'method overriding' in Java. Why is it considered a key aspect of achieving 'runtime polymorphism'?,
+Understanding questions,"What is the significance of the 'final' keyword in Java, and describe its various applications?",
+Understanding questions,Explain how the 'this' keyword in Java resolves ambiguity between instance variables and parameters.,
+Understanding questions,"What role does the 'static' keyword play in Java, and how does it impact memory management?",
+Understanding questions,Discuss the advantages and disadvantages of using Java's 'finally' block in exception handling.,
+Understanding questions,"Explain the concept of multithreading in Java, and highlight its advantages over multiprocessing.",
+Remembering Level Questions,What is the purpose of wrapper classes in Java?,
+Remembering Level Questions,What are the main features of the Java programming language?,
+Remembering Level Questions,What are the differences between String and StringBuffer in Java?,
+Remembering Level Questions,How do you create a String object in Java?,
+Remembering Level Questions,What is the role of Java Virtual Machine (JVM)?,
+Remembering Level Questions,"What is the difference between JDK, JRE and JVM?",
+Remembering Level Questions,Explain the difference between compile-time and runtime errors in Java.,
+Remembering Level Questions,What is the use of the 'throws' keyword in Java exception handling?,
+Remembering Level Questions,What is the purpose of the 'throw' keyword in Java exception handling?,
+Remembering Level Questions,What are the five keywords used in Java exception handling?,
+Remembering Level Questions,What are the different states of a thread's life cycle in Java?,
+Remembering Level Questions,What methods are available in the Thread class to control thread execution?,
+Remembering Level Questions,What is the difference between extending Thread and implementing Runnable in Java multithreading?,
+Remembering Level Questions,How do you set and get the priority of a thread in Java?,
+Remembering Level Questions,Explain the purpose of the 'isAlive()' and 'join()' methods in Java multithreading.,
+Application Level Questions,How would you use multithreading to improve the performance of a Java application that downloads and processes multiple images from the internet?,
+Application Level Questions,"Design a Java class that represents a bank account, using appropriate data members and methods. Implement the 'deposit()', 'withdraw()', and 'checkBalance()' operations.",
+Application Level Questions,"If you were tasked with creating a simple web application using Servlets, how would you structure the project and handle different user requests?",
+Application Level Questions,"Imagine you are building a Java application that interacts with a database. Explain how you would use JDBC to perform common operations like inserting, updating, deleting, and retrieving data.",
+Application Level Questions,How would you handle exceptions gracefully in a Java application to ensure that the program continues to run smoothly and provides appropriate feedback to the user?,
+Multiple-choice questions,Which of the following is NOT a core feature of Java?,Object-Oriented | Platform-Independent | Interpreted | Procedural
+Multiple-choice questions,What is the primary purpose of a Servlet Container in Java web development?,To manage the lifecycle of Servlets and JSPs | To provide communication support between client and server | To handle multithreading for incoming requests | All of the above
+Multiple-choice questions,Which keyword is used to explicitly throw an exception in Java?,try | catch | finally | throw
+Multiple-choice questions,Which of the following is a checked exception in Java?,ArithmeticException | NullPointerException | IOException | ArrayIndexOutOfBoundsException
+Multiple-choice questions,What is the purpose of the 'run()' method in Java multithreading?,To start the execution of a thread | To define the actions that a thread should perform | To control the priority of a thread | To wait for a thread to finish its execution
+Multiple-choice questions,Which of the following is NOT a valid way to create and start a thread in Java?,Extending the 'Thread' class | Implementing the 'Runnable' interface | Using the 'Thread.create()' method | Using the 'Thread.start()' method
+Multiple-choice questions,Which of the following is a true statement about Java applets?,Applets require a web server to run | Applets can access and modify local computer files | Applets are typically used for complex business applications | Applets are considered more secure than Java applications
+Multiple-choice questions,Which JDBC interface is used to execute parameterized queries?,Statement | PreparedStatement | ResultSet | DriverManager
+Multiple-choice questions,What is the purpose of the 'ResultSetMetaData' interface in JDBC?,To manage database connections | To execute SQL queries | To retrieve and process data from a database | To obtain information about the structure of a ResultSet
+Multiple-choice questions,Which of the following is NOT a type of JDBC driver?,JDBC-ODBC Bridge Driver | Native-API Driver | Thin Driver | Network Protocol Driver

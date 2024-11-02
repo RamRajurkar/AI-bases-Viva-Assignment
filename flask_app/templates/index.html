@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Online</title>
+    <script>
+        function playQuestion(question) {
+            fetch('/play-audio', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'question': question
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var audio = new Audio(data.audio_file);
+                audio.play();
+            });
+        }
+
+        function submitAnswer(question) {
+            var user_response = document.getElementById('user_answer').value;
+            fetch('/evaluate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'question': question,
+                    'user_response': user_response
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Your accuracy score is: ' + data.score);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Viva Online</h1>
+    <div>
+        {% for question in questions %}
+            <h3>{{ question }}</h3>
+            <button onclick="playQuestion('{{ question }}')">Play Question</button>
+            <br><br>
+        {% endfor %}
+        <input type="text" id="user_answer" placeholder="Enter your answer here">
+        <button onclick="submitAnswer('{{ question }}')">Submit Answer</button>
+    </div>
+</body>
+</html>

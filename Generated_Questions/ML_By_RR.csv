@@ -1,0 +1,41 @@
+Category,Question,Options
+Understanding questions,Explain the concept of generalization in machine learning and its significance in model performance.,
+Understanding questions,"Describe the differences between supervised, unsupervised, and reinforcement learning, providing examples for each category.",
+Understanding questions,What are the key advantages and disadvantages of using a decision tree model for classification?,
+Understanding questions,How does the random forest model overcome the limitations of a single decision tree?,
+Understanding questions,Explain the concept of hyperplanes in support vector machines and how they are used for classification.,
+Understanding questions,Describe the process of feature extraction in machine learning and explain the benefits of using principal component analysis (PCA) for this purpose.,
+Understanding questions,"Compare and contrast the filter, wrapper, and embedded approaches to feature selection, highlighting their strengths and weaknesses.",
+Understanding questions,How do you address the challenge of overfitting in decision tree learning using pruning techniques?,
+Understanding questions,Explain the role of activation functions in artificial neural networks and describe the characteristics of commonly used activation functions like ReLU and sigmoid.,
+Understanding questions,"Discuss the key differences between single-layer and multi-layer feed-forward neural networks, outlining the advantages and disadvantages of each architecture.",
+Remembering Level Questions,What is the definition of machine learning as provided by Tom M. Mitchell?,
+Remembering Level Questions,What are the three main types of human learning?,
+Remembering Level Questions,What are the three parts of the basic machine learning process?,
+Remembering Level Questions,What are the two types of quantitative data?,
+Remembering Level Questions,What are the five values in a data set that are represented in a box plot?,
+Remembering Level Questions,What are the two types of problems that can occur in data quality?,
+Remembering Level Questions,What are the three major steps involved in text-specific feature construction?,
+Remembering Level Questions,What are the four standard methods to measure the distance between clusters in hierarchical clustering?,
+Remembering Level Questions,What are the two main types of hierarchical clustering methods?,
+Remembering Level Questions,What are the three major components of an artificial neuron?,
+Remembering Level Questions,What are the two main parts of the human nervous system?,
+Remembering Level Questions,What is the name of the small gap between the axon terminal of one neuron and the adjacent dendrite of the neighboring neuron?,
+Remembering Level Questions,What is the earliest ANN model?,
+Remembering Level Questions,What is the name of the learning method adopted to train a multi-layer feed-forward network?,
+Remembering Level Questions,What is the name of the technique used to adjust the interconnection weights between neurons of different layers in backpropagation?,
+Application Level Questions,Imagine you're working on a project to predict customer churn for a telecommunications company. How would you apply the concepts of supervised learning to this problem?,
+Application Level Questions,You have a dataset of customer purchase history for an online retailer. How would you utilize unsupervised learning techniques to identify distinct customer segments?,
+Application Level Questions,Describe how you would use feature engineering techniques to transform raw data into meaningful features suitable for a machine learning model.,
+Application Level Questions,Explain how you would evaluate the performance of a regression model using appropriate metrics.,
+Application Level Questions,Imagine you are working on a project to detect fraudulent transactions in a banking system. How would you apply the concepts of machine learning to this problem?,
+Multiple-choice questions,Which of the following is NOT a type of human learning?,Direct instruction by an expert | Indirect learning from past experiences | Reinforcement learning | Self-learning through observation
+Multiple-choice questions,What is the main objective of feature selection in machine learning?,To create new features by combining existing ones | To reduce the dimensionality of the data set | To find the optimal hyperplane for classification | To improve the performance of the learning algorithm
+Multiple-choice questions,Which of the following is a commonly used distance measure for clustering?,Manhattan distance | Euclidean distance | Hamming distance | All of the above
+Multiple-choice questions,What is the name of the learning algorithm used to train a multi-layer feed-forward neural network?,K-means | Decision tree | Backpropagation | Support Vector Machine
+Multiple-choice questions,Which of the following is NOT a type of activation function used in artificial neural networks?,Identity function | ReLU function | Sigmoid function | Exponential function
+Multiple-choice questions,Which of the following is a characteristic of a good regression model?,It has a high coefficient of determination (R-squared) | It has a low root mean squared error (RMSE) | It has a high p-value for the regression coefficients | Both A and B
+Multiple-choice questions,What is the main advantage of using a random forest model over a single decision tree?,It is more robust to outliers | It is less prone to overfitting | It provides better estimates of feature importance | All of the above
+Multiple-choice questions,Which of the following is a characteristic of a competitive neural network?,The output neurons compete with each other to represent the input | The signals flow in one direction from input to output | It requires a large amount of training data | It is only suitable for classification problems
+Multiple-choice questions,Which of the following is NOT a type of clustering technique?,Partitioning methods | Hierarchical methods | Density-based methods | Regression methods
+Multiple-choice questions,What is the main advantage of using a deep neural network over a shallow neural network?,It is more computationally efficient | It is less prone to overfitting | It can learn more complex patterns in the data | It requires less training data

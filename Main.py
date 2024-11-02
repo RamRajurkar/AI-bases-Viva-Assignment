@@ -13,8 +13,8 @@ file_name = 'Temp_audio/Question.mp3'
 
 # Connect to MongoDB
 client = pymongo.MongoClient("mongodb://localhost:27017/")
-db = client['Question_Generated']  # Use your database name
-collection = db['Viva_Vista']  # Use your collection name
+db = client['Viva_Viva_Online_db']  # Use your database name
+collection = db['Question_Generated']  # Use your collection name
 
 
 # Function to convert text to audio
@@ -24,18 +24,41 @@ def text_to_audio(text, file_name, language='en'):
     print(f"Audio saved as {file_name}")
 
 # Function to play an audio file
+# def play_audio(file_name):
+#     playsound(file_name)
+
+
+import pygame
+
 def play_audio(file_name):
-    playsound(file_name)
+    try:
+        # Initialize pygame mixer
+        pygame.mixer.init()
+        
+        # Load the audio file
+        pygame.mixer.music.load(file_name)
+        
+        # Play the audio file
+        pygame.mixer.music.play()
+        
+        # Wait until the audio finishes playing
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+            
+    except Exception as e:
+        print(f"Error playing audio: {e}")
+
 
 # Fetch questions from MongoDB
 def fetch_questions_from_mongodb():
     document = collection.find_one()
+    document = document['data']
     
     # Extract questions from different categories
     understanding_questions = document.get('Understanding questions', [])
     remembering_questions = document.get('Remembering level questions', [])
     application_questions = document.get('Application level questions', [])
-    mcqs = document.get('MCQs', [])
+    mcqs = document.get('Multiple-choice questions', [])
     
     # Combine all questions into one list
     all_questions = understanding_questions + remembering_questions + application_questions
@@ -52,6 +75,7 @@ def select_random_questions(all_questions, num_questions=5):
     
     # Randomly select 5 unique questions
     selected_questions = random.sample(all_questions, num_questions)
+    print(selected_questions)
     
     return selected_questions
 
